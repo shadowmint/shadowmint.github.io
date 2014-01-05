@@ -313,17 +313,17 @@ var assets;
 (function (assets) {
     (function (sprites) {
         // NFI what this is
-        sprites.UNKNOWN = '/assets/unknown.png';
+        sprites.UNKNOWN = '/mega/assets/unknown.png';
 
         // Ocean assets
-        sprites.OCEAN = '/assets/ocean.png';
+        sprites.OCEAN = '/mega/assets/ocean.png';
         sprites.OCEAN_SIZE = 512;
-        sprites.OCEAN_DISPLACE = '/assets/ocean_displace.png';
+        sprites.OCEAN_DISPLACE = '/mega/assets/ocean_displace.png';
 
         // First ship and texture packer data
-        sprites.SHIP_WAKE = '/assets/wake.png';
-        sprites.SHIP_01 = '/assets/ship.01.png';
-        sprites.SHIP_01_JSON = '/assets/ship.01.json';
+        sprites.SHIP_WAKE = '/mega/assets/wake.png';
+        sprites.SHIP_01 = '/mega/assets/ship.01.png';
+        sprites.SHIP_01_JSON = '/mega/assets/ship.01.json';
         sprites.SHIP_01_FRAMES = ["ship.png0000.png", "ship.png0001.png", "ship.png0002.png", "ship.png0003.png", "ship.png0004.png", "ship.png0005.png", "ship.png0006.png", "ship.png0007.png", "ship.png0008.png", "ship.png0009.png", "ship.png0010.png", "ship.png0011.png"];
     })(assets.sprites || (assets.sprites = {}));
     var sprites = assets.sprites;
