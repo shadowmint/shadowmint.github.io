@@ -1,0 +1,18 @@
+<script src="/libs/jquery.js"></script>
+<script src="/libs/proton-1.0.0.js"></script>
+<script src="/js/pixi.js"></script> <!-- TODO: Fix once filters are into master -->
+<script src="/js/cherub.ts.js"></script>
+<script src="/js/fiz.ts.js"></script>
+<script src="/js/mega.ts.js"></script>
+<link href="/css/mega.scss.css" rel="stylesheet" type="text/css"/>
+<script> $(function () { core.main(); }); </script>
+<body class="mega">
+    <div id="content">
+    </div>
+
+    <div class="overlay">
+        <a href="" onclick="core.app.halt(); return false;">stop</a>
+        <div id="join"></div>
+        <div id="log"></div>
+    </div>
+</body>
