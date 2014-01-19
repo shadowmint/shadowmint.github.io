@@ -1,0 +1,13 @@
+{
+  "name": "proton",
+  "homepage": "https://github.com/a-jie/Proton",
+  "_release": "4be7eb5354",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "4be7eb535421bf1a55b0abe6a939df0d1a40cbb3"
+  },
+  "_source": "https://github.com/a-jie/Proton.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/a-jie/Proton.git"
+}

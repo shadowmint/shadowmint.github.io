@@ -1,0 +1,29 @@
+<link href="css/styles.scss.css" rel="stylesheet" type="text/css"/>
+<body class="grid">
+
+    <div class="all">
+        <div class="content">
+        </div>
+    </div>
+
+    <div id="help">
+        Click on the same type of block before they all disappear to earn points!
+    </div>
+
+    <div id="score"></div>
+
+    <div class="overlay">
+        <a href="" onclick="core.app.halt(); return false;">stop</a>
+        <div id="log"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="libs/jquery/jquery.js"></script>
+    <script src="libs/proton/build/proton-1.0.0.js"></script>
+    <script src="js/pixi.js"></script> <!-- TODO: Fix once filters are into master -->
+    <script src="js/libn.ts.js"></script>
+    <script src="js/cherub.ts.js"></script>
+    <script src="js/fiz.ts.js"></script>
+    <script src="js/app.ts.js"></script>
+    <script> $(function () { core.main(); }); </script>
+</body>
