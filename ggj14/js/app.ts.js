@@ -270,7 +270,7 @@ var model;
         Config.PLAYER_JUMP_RATE = -350;
         Config.PLAYER_ELEMENT_FALL_RATE = 8.0;
         Config.PLAYER_MOVE_STATIC = 100;
-        Config.PLAYER_MAX_ELEMENT = 300;
+        Config.PLAYER_MAX_ELEMENT = 400;
 
         Config.ADD_FALLER_INTERVAL = 1000;
 
@@ -365,8 +365,8 @@ var model;
         Factory.prototype.player = function () {
             var rtn = new Player();
             rtn.body = new fiz.model.SimpleBody();
-            rtn.body.size.x = 40;
-            rtn.body.size.y = 100;
+            rtn.body.size.x = 60;
+            rtn.body.size.y = 60;
             rtn.body.pos.x = 0;
             rtn.body.pos.y = -200;
             rtn.body.solid = true;
@@ -823,6 +823,12 @@ var display;
             this.container.height = this.size.y;
             this.container.position.x = this.pos.x - this.size.x / 2;
             this.container.position.y = this.pos.y - this.size.y / 2;
+
+            var frame = this.frames[this.frame];
+            frame.width = this.size.x;
+            frame.height = this.size.y;
+            //frame.position.x = this.pos.x - this.size.x / 2;
+            //frame.position.y = this.pos.y - this.size.y / 2;
         };
 
         /* Save state */
@@ -860,6 +866,11 @@ var display;
                     }
                     this.container.removeChild(prev);
                     this.container.addChild(this.frames[this.frame]);
+                    var frame = this.frames[this.frame];
+                    frame.width = this.size.x;
+                    frame.height = this.size.y;
+                    //frame.position.x = this.pos.x - this.size.x / 2;
+                    //frame.position.y = this.pos.y - this.size.y / 2;
                 }
             }
         };
