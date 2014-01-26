@@ -1,0 +1,78 @@
+<link href="css/styles.scss.css" rel="stylesheet" type="text/css"/>
+<body class="bounce">
+
+<!-- Help -->
+<div class="help">
+    <div>
+        Collect candies to save the world! Look in the reflection to see what flavour
+        each candy is, and be careful you don't run out each type~
+    </div>
+</div>
+
+<!-- UI -->
+<div class="health">
+    <div class="fire">
+        <div id="fire"></div>
+    </div>
+    <div class="ice">
+        <div id="ice"></div>
+    </div>
+    <div class="wood">
+        <div id="wood"></div>
+    </div>
+</div>
+<div class="score"></div>
+<div class="frame"></div>
+<div class="frame2"></div>
+
+<!-- End of game -->
+<div class="lose">
+    <div>
+        <div>
+            <h3>THE END</h3>
+        </div>
+        <div>
+            You saved <span class="lose-score"></span> points worth of candy!
+        </div>
+        <div>
+            Keep track of each of the <span class="r">fire</span>, <span class="b">ice</span> and <span class="g">wood</span> energy bars and make sure
+            you don't run out of any! Be careful, collecting certain types reduces
+            the values of others...
+        </div>
+        <div>
+            <a href="#" onclick="app.restart(); return false;">Play again?</a>
+        </div>
+    </div>
+</div>
+
+<!-- Stage -->
+<div id="content">
+</div>
+
+<!-- Debug info -->
+<div class="overlay">
+    <a href="" onclick="app.halt(); return false;">stop</a>
+    <a href="" onclick="app.scenes.open('home'); return false;">restart</a>
+
+    <div id="log"></div>
+</div>
+
+<!-- Scripts -->
+<script src="libs/jquery/jquery.js"></script>
+<script src="libs/proton/build/proton-1.0.0.js"></script>
+<script src="libs/pixi/bin/pixi.js"></script>
+<script src="js/libn.ts.js"></script>
+<script src="js/cherub.ts.js"></script>
+<script src="js/fiz.ts.js"></script>
+<script src="js/app.ts.js"></script>
+<script>
+    // Log
+    var instance = new n.logger.DocumentLogger($('#log')[0]);
+    n.logger.init(instance);
+
+    // Main
+    app = new App(function() {
+        app.scenes.open('home');
+    });
+</script>
+</body>
